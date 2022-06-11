@@ -4,3 +4,88 @@
     letter-spacing: 0.04em;
     font-family: Helvetica, Arial, sans-serif;
 }
+
+.title-container {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-header {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 2.5em;
+    color: #373737;
+    padding: 0 2rem;
+}
+
+.section-header .line {
+    flex: 1;
+    height: 3px;
+    background-color: black;
+}
+
+.about-content {
+    font-family: roboto, helvetica, sans-serif;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: rgb(205, 231, 255);
+}
+
+.item-container {
+    font-family: Helvetica, sans-serif;
+}
+
+.item-header {
+    color: rgb(39, 78, 133);
+}
+
+.item-subheader {
+    display: flex;
+    font-weight: 700;
+    color: green;
+}
+
+.item-subheader p {
+    margin-bottom: 2px;
+    line-height: 20px;
+}
+
+.location-header {
+    font-weight: 600;
+    color: rgb(92, 92, 92);
+}
+
+.item-header p {
+    margin-bottom: 2px;
+}
+
+.time-period {
+    margin-left: auto;
+}
+
+.item-text {
+    margin-top: 20px;
+    font-family: roboto, Helvetica, sans-serif;
+}
+
+.item-header::after  {
+    content: "\a";
+    white-space: pre;
+}
+
+.item-subheader::after {
+    content: "\a";
+    white-space: pre;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+}
