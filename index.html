@@ -4,23 +4,20 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Sean Mills - Personal Website</title>
-        <link href="./styles.css" rel="stylesheet">
+        <link href="./assets/styles.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     </head>
     <body>
-        <div class="container-fluid">
+        <div class="container px-5">
             <div class="row gy-5 align-items-center">
-                <div class="col-12 p-3 text-center title-container">
+                <div class="col-12 text-center title-container">
                     <h1 class="home-title">Sean Mills</h1>
                     <h3>Software Engineer</h3>
                 </div>
             </div>
-            <div class="row gy-5">
-                <span class="col-2"></span>
-                <div class="col-8 p-3 text-center">
-                    <div class="section-header">
-                        <h2>About Me</h2>
-                    </div>
+            <div class="row px-5 py-2">
+                <div class="col-12 p-3 text-center">
+                    <h2 class="section-header">About Me</h2>
                     <div class="about-content">
                         <p>
                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
@@ -32,19 +29,16 @@
                 </div>
                 <span class="col-2"></span>
             </div>
-            <div class="row gy-5">
-                <span class="col-2"></span>
-                <div class="col-8 p3">
-                    <div class="section-header">
-                        <h2>Education</h2>
-                    </div>
+            <div class="row px-5 py-2">
+                <div class="col-12 p-3">
+                    <h2 class="section-header">Education</h2>
                     <div class="item-container">
                         <h4 class="item-header">University of Maryland</h4>
-                        <div class="item-subheader">
-                            <p>Bachelor of Science in Computer Science with Minor in Statistics</p>
+                        <span class="item-subheader">
+                            Bachelor of Science in Computer Science with Minor in Statistics
                             <p class="time-period">Auguest 2017 - May 2021</p>
-                        </div>
-                        <span class="location-header">College Park, Maryland</span>
+                        </span>
+                        <span class="location-header">College Park,  Maryland</span>
                         <div class="item-text">
                             <p>
                                 During my four years at the University of Maryland I learned and mastered the basics of computer programming. 
@@ -62,11 +56,131 @@
                     </div>
                     <div class="item-container">
                         <h4 class="item-header">Ocean Township High School</h4>
-                        <div class="item-subheader">
-                            <p>Diploma with Honors</p>
+                        <span class="item-subheader">
+                            Diploma with Honors
                             <p class="time-period">2013 - 2017</p>
+                        </span>
+                        <span class="location-header">Ocean Township,  New Jersey</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row px-5 py-2">
+                <div class="col-12 p-3">
+                    <h2 class="section-header">Work Experience</h2>
+                    <div class="item-container">
+                        <h4 class="item-header">J.P. Morgan & Chase</h4>
+                        <span class="item-subheader">
+                            Software Engineer
+                            <p class="time-period">July 2021 - Present</p>
+                        </span>
+                        <span class="location-header">Jersey City,  New Jersey</span>
+                        <div class="item-text">
+                            <p>
+                                As part of the Corporate & Investment Bank Technology section of J.P. Morgan & Chase I took a lead in 
+                                implementing a new full stack solution to replace my team's existing UI. Project was used by clients to 
+                                organuze, generate, create and edit detailed financial reports. 
+                            </p>
+                            <p>
+                                Worked on developing the front-end of the UI using the React Javascript framework to handle UI events. 
+                            </p>
+                            <p>
+                                Created the project backend using Java with the Springboot framework to handle user authentication and 
+                                authorization, proxying to API servers, and managing report metadata. Modified and create multi-threaded 
+                                REST APIs to collect report related data from an SQL database.
+                            </p>
+                            <p>
+                                Worked in a support role, investigating and solving real-time production issues and inquires
+                            </p>
                         </div>
-                        <span class="location-header">Ocean Township, New Jersey</span>
+                    </div>
+                    <div class="item-container">
+                        <h4 class="item-header">Amazon Web Services</h4>
+                        <span class="item-subheader">
+                            Software Development Engineer Intern
+                            <p class="time-period">June - August 2020</p>
+                        </span>
+                        <span class="location-header">Remote</span>
+                        <div class="item-text">
+                            <p>
+                                As a part of Amazon Web Services I was tasked with creating a analytics dashboard for an internal team 
+                                monitering applications from secure regions. Designed, tested, and implemented a solution that provided
+                                users of various analytic graphs of emit data
+                            </p>
+                            <p>
+                                Designed the project from the ground up, using an AWS Dynamo DB table to store emit data, a Java backend to
+                                automatically add and remove emit times, new REST API endpoints to fetch data, and a frontend implemented 
+                                using Typescript and React to display timeseries data in various graphs
+                            </p>
+                            <p>
+                                Successfully deployed and presented my project to team members and stakeholders
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <h4 class="item-header">SpringGem Weather Information</h4>
+                        <span class="item-subheader">
+                            Part-time Software Developer
+                            <p class="time-period">March - May 2020</p>
+                        </span>
+                        <span class="location-header">Remote</span>
+                        <div class="item-text">
+                            <p>
+                                After joining SpringGem in March 2020 I set to work on creating an interactive COVID-19 map that displayed
+                                the total number of cases, deaths, and recoveries on a glabal country, U.S. state, and U.S. county level.
+                                Backend for the maps was created with Python and the Django web framework, and a PostgreSQL database. On the
+                                frontend I utilized the Plotly library for map generation.
+                            </p>
+                            <p>
+                                Created a program in Python that collected NOAA temperature and precipitation data and produced 2d density
+                                plot timelapse over the contenental United States for a given day. Later collected data on wind speed and 
+                                direction at low and high altitudes to produce vector plots over the U.S.
+                            </p>
+                            <p>
+                                Automated the data collection and plot production, overlayed the plots over a map and added the 
+                                results to the website. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <h4 class="item-header">FourthWall Media</h4>
+                        <span class="item-subheader">
+                            Data Science Intern
+                            <p class="time-period">June - August 2019</p>
+                        </span>
+                        <span class="location-header">Sterling, Virginia</span>
+                        <div class="item-text">
+                            <p>
+                                As a member of the Data Science team at FourthWall media I successfully utilized my experience in Python with
+                                Numpy and Pandas to perform advanced analysis and regression model creation
+                            </p>
+                            <p>
+                                Used Numpy and Pandas to analyze irregularities in timeseries data before and after a source data format 
+                                conversion. Found the source of the irregularities and discovered novel patterns in timeseries densitites
+                            </p>
+                            <p>
+                                Created a regression model in R to predict the average daily viewership of a random sample of TV viewers.
+                                Successfully implemented all parts of the Data Science pipeline includeing obtaining data from an Oracle SQL
+                                database, cleaning the data of bad entries, visualizing trends in shows users typically watch, and modelling 
+                                the data using regression. Presented my finding to the rest of the Data Science team.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <h4 class="item-header">FourthWall Media</h4>
+                        <span class="item-subheader">
+                            Software Engineer Intern
+                            <p class="time-period">June - Auguest 2018</p>
+                        </span>
+                        <span class="location-header">Sterling, Virginia</span>
+                        <div class="item-text">
+                            <p>
+                                During my first year at FourthWall Media I created a new internal UI application to view, search, and manage
+                                various data provider' infomation
+                            </p>
+                            <p>
+                                Project was built using the Django web fromework for Python with Bootstrap for the frontend 
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

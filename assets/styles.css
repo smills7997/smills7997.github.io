@@ -16,19 +16,10 @@
 .section-header {
     margin-top: 30px;
     text-align: center;
-}
-
-.section-header h2 {
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: roboto-black, Verdana, Tahoma, sans-serif;
     font-size: 2.5em;
     color: #373737;
     padding: 0 2rem;
-}
-
-.section-header .line {
-    flex: 1;
-    height: 3px;
-    background-color: black;
 }
 
 .about-content {
@@ -44,12 +35,15 @@
 
 .item-header {
     color: rgb(39, 78, 133);
+    margin-bottom: 2px;
+    font-family: roboto-medium, Helvetica, sans-serif;
 }
 
 .item-subheader {
     display: flex;
     font-weight: 700;
     color: green;
+    margin-bottom: 2px;
 }
 
 .item-subheader p {
@@ -88,4 +82,14 @@
 @font-face {
     font-family: roboto;
     src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto-black;
+    src: url(fonts/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: roboto-medium;
+    src: url(fonts/Roboto-Medium.ttf);
 }
