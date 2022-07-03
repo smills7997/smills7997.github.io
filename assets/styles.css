@@ -30,7 +30,7 @@
 }
 
 .item-container {
-    font-family: Helvetica, sans-serif;
+    font-family: roboto, Helvetica, sans-serif;
 }
 
 .item-header {
@@ -79,11 +79,18 @@
     white-space: pre;
 }
 
+.item-image {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .image-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-right: 2rem;
+    list-style-type: none;
 }
 
 .image-list li {
@@ -94,6 +101,16 @@
 
 .image-list img {
     max-height: 100%;
+    border-radius: 10px;
+}
+
+.image-list li :hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.item-link {
+    font-family: roboto-bold, Helvetica, sans-serif;
+    font-size: 1.2em;
 }
 
 @font-face {
