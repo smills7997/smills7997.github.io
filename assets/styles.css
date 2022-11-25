@@ -22,6 +22,12 @@
     padding: 0 2rem;
 }
 
+.page-header {
+    background-image: url("images/headshot.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .about-content {
     font-family: roboto, helvetica, sans-serif;
     padding: 8px;
@@ -94,7 +100,7 @@
 }
 
 .image-list li {
-    height: 18vh;
+    height: 16vh;
     margin: 10px;
     max-width: fit-content;
 }
