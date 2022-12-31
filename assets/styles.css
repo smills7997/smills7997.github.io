@@ -141,6 +141,19 @@
     font-size: 1.2em;
 }
 
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 @font-face {
     font-family: roboto;
     src: url(fonts/Roboto-Regular.ttf);
@@ -159,4 +172,10 @@
 @font-face {
     font-family: roboto-bold;
     src: url(fonts/Roboto-Bold.ttf);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
 }
