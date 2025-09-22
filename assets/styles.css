@@ -133,8 +133,8 @@
 }
 
 .image-list li :hover {
+    transform: translateY(-4px);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-top: -5px;
 }
 
 .item-link {
@@ -144,6 +144,71 @@
 
 .certificates-container {
     padding-left: 2rem;
+}
+
+.cert-row {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.credly-embed {
+    flex: 0 0 auto;
+}
+
+.nvidia-cert-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    width: 300px;
+    height: 240px;
+    background: linear-gradient(180deg, #000000 0%, #121212 100%);
+    border-radius: 8px;
+    padding: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.nvidia-cert-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+.nvidia-card-inner {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.nvidia-logo > img {
+    height: 50px;
+    width: auto;
+}
+
+.nvidia-title {
+    margin-top: 12px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #e9f8e6;
+    font-family: roboto-medium, Helvetica, sans-serif;
+}
+
+.nvidia-meta {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #cfd8cc;
+    font-family: roboto, Helvetica, sans-serif;
+}
+
+.nvidia-name {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.nvidia-issued, .nvidia-id {
+    margin-top: 4px;
+    color: #bfc9b8;
+    font-size: 0.8rem;
 }
 
 .hidden {
@@ -157,6 +222,11 @@
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+}
+
+#pytorch-logo {
+    max-width: 325px;
+    height: auto;
 }
 
 @font-face {
